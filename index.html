@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Key_Finnz Blox — Ajuda Profissional de Farm no Blox Fruits</title>
+  <meta name="description" content="Key_Finnz Blox: orientação profissional de farm, missões, frutas e progresso nos Seas do Blox Fruits. Atendimento por WhatsApp." />
+
+  <style>
+    :root {
+      --bg: #060b18;
+      --bg2: #0b1428;
+      --card: rgba(16, 27, 51, .82);
+      --gold: #f5c542;
+      --gold2: #ffdf7a;
+      --blue: #3aa7ff;
+      --blue2: #7fd0ff;
+      --text: #eaf2ff;
+      --muted: #a9bad4;
+      --danger: #ff6b6b;
+      --ok: #4ade80;
+      --radius: 20px;
+      --shadow: 0 18px 45px rgba(0,0,0,.45);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--text);
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background:
+        radial-gradient(900px 500px at 10% -10%, rgba(58,167,255,.22), transparent),
+        radial-gradient(800px 500px at 90% 0%, rgba(245,197,66,.16), transparent),
+        linear-gradient(180deg, #050915, #071023 45%, #04070f);
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(245,197,66,.08), transparent 25%),
+        radial-gradient(circle at 80% 70%, rgba(58,167,255,.10), transparent 30%);
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(14px);
+      background: rgba(4,8,18,.78);
+      border-bottom: 1px solid rgba(245,197,66,.22);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      letter-spacing: .4px;
+      color: var(--gold2);
+      text-shadow: 0 0 18px rgba(245,197,66,.35);
+    }
+
+    .brand span { font-size: 1.35rem; }
+
+    nav {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    nav::-webkit-scrollbar { display: none; }
+
+    nav a {
+      white-space: nowrap;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: .92rem;
+      font-weight: 600;
+      padding: 9px 13px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      transition: .25s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #06101f;
+      background: linear-gradient(135deg, var(--gold), var(--gold2));
+      border-color: rgba(255,255,255,.25);
+      box-shadow: 0 0 22px rgba(245,197,66,.35);
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      padding: 70px 0 50px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2.3rem, 7vw, 4.3rem);
+      color: var(--gold2);
+      text-shadow: 0 0 28px rgba(245,197,66,.45);
+      animation: rise .8s ease both;
+    }
+
+    .hero .subtitle {
+      margin: 0 auto 24px;
+      max-width: 640px;
+      color: var(--blue2);
+      font-size: clamp(1rem, 3.4vw, 1.25rem);
+      font-weight: 600;
+      animation: rise .8s .12s ease both;
+    }
+
+    .hero p.lead {
+      max-width: 720px;
+      margin: 0 auto 28px;
+      color: var(--muted);
+      animation: rise .8s .22s ease both;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      animation: rise .8s .32s ease both;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 22px;
+      border: 0;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 1rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+    }
+
+    .btn:active { transform: scale(.96); }
+
+    .btn-gold {
+      color: #08101f;
+      background: linear-gradient(135deg, var(--gold), var(--gold2));
+      box-shadow: 0 0 26px rgba(245,197,66,.35);
+    }
+
+    .btn-blue {
+      color: #04121f;
+      background: linear-gradient(135deg, var(--blue), var(--blue2));
+      box-shadow: 0 0 26px rgba(58,167,255,.32);
+    }
+
+    .btn-ghost {
+      color: var(--text);
+      background: rgba(255,255,255
